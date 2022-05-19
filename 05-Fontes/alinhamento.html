@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Elementos de Texto em CSS</h1>
+    <h2 id="principal">Id (Identifier) e Class (Classes)</h2>
+    <p>
+        O Id em um arquivo CSS tem como finalidade <mark class="phrase">identificar separadamente uma tag que necessite de uma edição separada.</mark>
+    </p>
+    <p>
+        O Id pode ser identificado em um código CSS com o símbolo de <mark class="symbol">Hashtag(#)</mark>, enquanto que a classe pode ser identificada com o símbolo de ponto.
+        Vale ressaltar que segundo a W3C, o Id só pode identificar um elemento/tag.
+    </p>
+    <p>
+        Se caso a sua necessidade seja criar um identificador múltiplo, ou seja, que seja modificável dependendo da tag/elemento, uma <mark class="symbol">classe</mark> poderá lhe ajudar.
+    </p>
+    <h2>Pseudo-Classes (:)</h2>
+    <p>
+        Precisam estar ligadas à um elemento ou uma classe. <mark class="symbol">É identificada pelo símbolo de dois pontos (:)</mark>
+    </p>
+    <p style="text-indent: 0px;">
+        A pseudo-classe referencia ao estado do elemento:
+        <ul style="list-style-type: none;">
+            <li>Pressionado (active)</li>
+            <li>Vazio (empty)</li>
+            <li>Mouse Sobre o Elemento (hover)</li>
+        </ul>
+    </p>
+    
+        <div id="d1">
+            01 
+            <p>Apertou</p>
+        </div>
+        <div id="d2">
+            02 
+            <p>Apertou</p>
+        </div>
+        <div id="d3">
+            03 
+            <p>Apertou</p>
+        </div>
+
+    <h2>Shortcut (Alt + Mouse Click)</h2>
+    <p>
+        Te permite <mark class="phrase">escrever em diferentes linhas</mark> dentro do Visual Studio Code.
+    </p>
+
+    <h2>Personalizando Links</h2>
+    <ul>
+        <li><a href="https://github.com/AugustoBrandao" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/augusto-brand%C3%A3o-901866186/" target="_blank">LinkedIn</a></li>
+    </ul>
+
+    <h2>Exemplo de Box-Level</h2>
+    <p>
+        Parágrafos também são exemplos de Box-Level, mas os <a href="#" id="link"> links são caixas Inline-Level</a>. Vamos ver como isso funciona.
+    </p>
+</body>
+</html>

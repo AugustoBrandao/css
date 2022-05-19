@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        /*Font from remote repository*/
+        @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Goldman:wght@400;700&family=Gruppo&family=Koulen&display=swap');
+
+        /*Font from local repository*/
+        @font-face
+        {
+            font-family: 'Cloister Black';
+            src: url('fonts/CloisterBlack.ttf') format('truetype');
+            /*
+                Tipos de Format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+            */
+        }
+
+        body  
+        {  
+            font-family: Arial, Helvetica, sans-serif;      
+            font-size: 16px;  /* 16px = 1 em*/
+        }
+
+        h1 /*Sem SHORTHAND*/
+        {  
+            font-family: 'Gruppo', Arial, Helvetica, sans-serif;      
+            font-weight: bolder; /* lighter, normal, bold, bolder ou 100 até 900 */
+            font-style: normal;  /* normal, italic, bolder                       */
+            text-decoration: underline;
+        }
+
+        h2 /*Com SHORTHANDS*/ /*font-style, font-weight, font-size, font-family*/
+        {
+            font: italic bolder 24px 'Cloister Black', sans-serif;
+        }
+
+        p { font-weight: lighter; }
+
+        a {  text-decoration: none;  }
+
+        /*Medidas Absolutas: cm, mm, in, *px, pt, pc*/
+        /*Medidas Relativas: ex (altura x minúsculo), *em(altura M maiúsculo), vw(viewport - largura da tela, porcentagem), vh (altura da tela)*/
+        /*Recomendação da W3C: px (pixels), em (altura M maiúsculo)*/
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit delectus sunt nulla voluptatum provident iste id officiis a eaque harum. Quas debitis excepturi ut molestiae accusamus! Expedita deserunt dolor perspiciatis!
+    </p>
+
+    <h2>Subtítulo do Exercício</h2>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit delectus sunt nulla voluptatum provident iste id officiis a eaque harum. Quas debitis excepturi ut molestiae accusamus! Expedita deserunt dolor perspiciatis! <br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit delectus sunt nulla voluptatum provident iste id officiis a eaque harum. Quas debitis excepturi ut molestiae accusamus! Expedita deserunt dolor perspiciatis! <br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit delectus sunt nulla voluptatum provident iste id officiis a eaque harum. Quas debitis excepturi ut molestiae accusamus! Expedita deserunt dolor perspiciatis!
+    </p>
+
+    <h3>Fontes Diferentes</h3>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit delectus sunt nulla voluptatum provident iste id officiis a eaque harum. Quas debitis excepturi ut molestiae accusamus! Expedita deserunt dolor perspiciatis!
+    </p>
+
+    <!-- ÂNCORA -->
+    <ul style=" list-style-type: none; ">
+        <li>
+            <a href="https://www.youtube.com/watch?v=aKCF1QAk-Is">Short Hand CSS</a>
+        </li>
+        <li>
+            <a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp">Safe Fonts For CSS</a>
+        </li>
+        <li>
+            <a href="https://fonts.google.com/?category=Display&subset=latin&preview.text=DA-20%20TECH&preview.text_type=custom">Google Fonts</a>
+        </li>
+        <li>
+            <a href="https://www.dafont.com/pt/">Dafont</a>
+        </li>
+        <li>
+            <a href="https://www.whatfontis.com/">Descobrir Fontes por Imagem - 01</a>
+        </li>
+        <li>
+            <a href="https://www.fontsquirrel.com/matcherator">Descobrir Fontes por Imagem - 02</a>
+        </li>
+        <li>
+            <a href="https://www.myfonts.com/WhatTheFont/">Descobrir Fontes por Imagem - 03</a>
+        </li>
+        <li>
+            <a href="">Extensão: Fonts Ninja - Google Chrome</a>
+        </li>
+    </ul>    
+</body>
+</html>

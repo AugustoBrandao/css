@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+body { 
+    background-color: rgb(173, 172, 172); 
+    font-family: 'Space Mono'; 
+    margin: 0px;
+}
+
+header { 
+    background-color: aliceblue; 
+    padding: 10px; 
+    margin: 10px; 
+    box-shadow: 1px 1px 5px rgb(84, 84, 84);
+}
+
+main { 
+    background-color: aliceblue; 
+    padding: 10px; 
+    margin: 10px; 
+    box-shadow: 1px 1px 5px rgb(84, 84, 84); 
+    border-radius: 5px;
+}
+
+nav { background-color: grey; padding: 3px; box-shadow: 1px 1px 3px grey;}
+
+nav > a { 
+    text-decoration: none;    
+    color: white; 
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+nav > a:hover { 
+    text-decoration: underline; 
+    color: white; 
+}
+
+article { 
+    background-color: lightgray; 
+    padding: 3px; 
+    box-shadow: 1px 1px 5px grey;
+}
+
+article > aside { background-color: rgb(161, 158, 158);}
+
+footer{ 
+    background-color: black;   
+    color:white; 
+    text-align: center;
+    padding: 5px;
+}
+
+footer > p{ margin: 0px;}
