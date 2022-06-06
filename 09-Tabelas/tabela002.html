@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Tabelas Grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: rgb(47, 156, 123);
+        }
+
+        td, th, caption{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        thead, tfoot, caption{
+            background-color: rgb(47, 156, 123);
+            color: white;
+        }
+
+        tbody > tr:nth-child(2n){ /* Efeito zebrado*/
+            background-color: lightgray;
+        }
+
+        p{text-align: justify;}
+    </style>
+</head>
+<body>
+    <!-- ANATOMA PARA TABELAS GRANDES -->
+    <!-- 
+        TABLE
+
+        caption
+        THEAD
+            tr, td
+        TBODY
+            tr, td
+        TFOOT
+            tr, td
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>1.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>1.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>1.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>1.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>1.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.919.049</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td ><strong>1.000.000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente omnis quam consectetur totam iste debitis odit atque, architecto nam unde recusandae perspiciatis dolorum natus adipisci voluptatibus voluptatum minima facere. Asperiores?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus quia officia aut quibusdam, magnam molestias nam et iure pariatur fuga sit, vel dolorem aspernatur expedita facere, architecto consectetur tempore asperiores?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore ducimus, molestiae reiciendis quas, et recusandae quis nihil suscipit possimus esse eos vitae atque, ipsa aliquam nisi soluta sed. Voluptas, i Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, ad. Aspernatur totam quam pariatur nulla voluptas tempore expedita hic quia, quis deserunt necessitatibus obcaecati! Dolore vero aspernatur molestias harum consectetur?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo provident error quibusdam aut nisi sequi debitis asperiores totam molestias minus, consequuntur assumenda, amet incidunt exercitationem nesciunt, est a ad animi!
+    </p>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente omnis quam consectetur totam iste debitis odit atque, architecto nam unde recusandae perspiciatis dolorum natus adipisci voluptatibus voluptatum minima facere. Asperiores?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus quia officia aut quibusdam, magnam molestias nam et iure pariatur fuga sit, vel dolorem aspernatur expedita facere, architecto consectetur tempore asperiores?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore ducimus, molestiae reiciendis quas, et recusandae quis nihil suscipit possimus esse eos vitae atque, ipsa aliquam nisi soluta sed. Voluptas, i Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, ad. Aspernatur totam quam pariatur nulla voluptas tempore expedita hic quia, quis deserunt necessitatibus obcaecati! Dolore vero aspernatur molestias harum consectetur?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo provident error quibusdam aut nisi sequi debitis asperiores totam molestias minus, consequuntur assumenda, amet incidunt exercitationem nesciunt, est a ad animi!
+    </p>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente omnis quam consectetur totam iste debitis odit atque, architecto nam unde recusandae perspiciatis dolorum natus adipisci voluptatibus voluptatum minima facere. Asperiores?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus quia officia aut quibusdam, magnam molestias nam et iure pariatur fuga sit, vel dolorem aspernatur expedita facere, architecto consectetur tempore asperiores?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore ducimus, molestiae reiciendis quas, et recusandae quis nihil suscipit possimus esse eos vitae atque, ipsa aliquam nisi soluta sed. Voluptas, i Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, ad. Aspernatur totam quam pariatur nulla voluptas tempore expedita hic quia, quis deserunt necessitatibus obcaecati! Dolore vero aspernatur molestias harum consectetur?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo provident error quibusdam aut nisi sequi debitis asperiores totam molestias minus, consequuntur assumenda, amet incidunt exercitationem nesciunt, est a ad animi!
+    </p>
+</body>
+</html>
