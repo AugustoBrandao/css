@@ -1,0 +1,13 @@
+.flex-container {
+    display: flex;
+    height: 150px;
+}
+
+.divs {
+    width: 12.5%;
+    margin-right: 5px;
+    height: 100%;
+    border: solid 1px black;
+    text-align: center;
+    font-size: 120px;
+}
